@@ -1,7 +1,13 @@
 const express=require('express');
 const router=express.Router();
 
-router.use('/addproduct',require('./post'));
+
+
+
+console.log('hjbhhgh');
+router.use('/',require('/addproduct'));
+
+
 
 
 
