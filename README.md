@@ -12,79 +12,64 @@
 <code>http://localhost:8000/create</code><br>
 ->response <br>
 <code>
-{
-    "data": {
-        "product": {
-            "_id": "5e7218a50de915060b8be89a",
-            "name": "iphone",
-            "quantity": "34",
-            "createdAt": "2020-03-18T12:48:37.250Z",
-            "updatedAt": "2020-03-18T12:48:37.250Z",
-            "__v": 0
-        }
-    }
-}
+{<br>
+    "data": {<br>
+        "product": {<br> 
+            "_id": "5e7218a50de915060b8be89a",<br>
+            "name": "iphone",<br>
+            "quantity": "34",<br>
+            "createdAt": "2020-03-18T12:48:37.250Z",<br>
+            "updatedAt": "2020-03-18T12:48:37.250Z",<br>
+            "__v": 0<br>
+        }<br>
+    }<br>
+}<br>
 </code>
 
 
 <p> Delete Product</p>
-->request(Delete Request)
-<code>http://localhost:8000/:id</code>
-->response 
-<code>
+->request(Delete Request)<br>
+<code>http://localhost:8000/:id</code><br>
+->response <br>
+<code><br>
 {
-   Product deleted!
-}
-</code>
+   Product deleted!<br>
+}<br>
+</code><br>
 
 
 <p> List All Product</p>
-->request(Get request)
-<code>http://localhost:8000</code>
-->response 
-<code>
-{
-   {
+->request(Get request)<br>
+<code>http://localhost:8000</code><br>
+->response <br>
+<code><br>
+{<br>
+   {<br>
     "products": [
         {
-            "_id": "5e7218a50de915060b8be89a",
-            "name": "iphone",
-            "quantity": "34",
+            "_id": "5e7218a50de915060b8be89a",<br>
+            "name": "iphone",<br>
+            "quantity": "34",<br>
             "createdAt": "2020-03-18T12:48:37.250Z",
-            "updatedAt": "2020-03-18T12:48:37.250Z",
+            "updatedAt": "2020-03-18T12:48:37.250Z",<br>
             "__v": 0
-        },
-        {
-            "_id": "5e7215b30de915060b8be898",
-            "name": "knvkdnvd",
-            "quantity": "34",
-            "createdAt": "2020-03-18T12:36:03.770Z",
-            "updatedAt": "2020-03-18T12:36:03.770Z",
-            "__v": 0
-        },
-        {
-            "_id": "5e6cc9f8bb1a8b15068a9262",
-            "name": "knvkdnvd",
-            "quantity": "34",
-            "createdAt": "2020-03-14T12:11:36.314Z",
-            "updatedAt": "2020-03-14T12:11:36.314Z",
-            "__v": 0
-        }
-    ]
+        }<br>
+        
+    ]<br>
+}<br>
 }
-}
-</code>
+</code><br>
 
 
 
 
 
 
-##Technologies 
-1-Backend ->Node.js
-2-Database ->MongoDB
+<br><h2>##Technologies </h2>
+1-Backend ->Node.js<br>
+2-Database ->MongoDB<br>
 
-##How to use
-To run this project, install it locally using npm:
-$ npm install
-$ npm start
+<h2>##How to use</h2>
+To run this project, install it locally using npm:<br>
+$ npm install<br>
+$ npm start<br>
