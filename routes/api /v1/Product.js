@@ -21,4 +21,6 @@ router.delete('/:id',productsApi.destroy);
 router.post('/:id/update_quantity',productsApi.update);
 
 
+
+//export the  router , so that is could be used in another files
 module.exports = router;
