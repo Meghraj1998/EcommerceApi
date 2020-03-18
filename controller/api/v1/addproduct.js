@@ -1,6 +1,9 @@
+//get the database obj from model folder to make changes in DB
 const Product = require('../../../model/index');
 
 
+
+//home function return all the products detail from DB
 module.exports.home = async function(req, res){
     
 
@@ -15,6 +18,8 @@ module.exports.home = async function(req, res){
 }
 
 
+
+//This Function create the product in Db
 module.exports.create = async function(req, res){
    try{
        console.log("product");
@@ -41,6 +46,8 @@ module.exports.create = async function(req, res){
 }
 
 
+
+//This function delete the product
 module.exports.destroy = async function (req, res) {
     try {
         let product = await Product.findById(req.params.id);
@@ -63,13 +70,16 @@ module.exports.destroy = async function (req, res) {
 
 }
 
+
+//this method update the data
 module.exports.update = function(req,res){
 
     try {
         Product.findOneAndUpdate({_id:req.params.id},
-            {$set:{quantity:req.params.number}},function(err,product){
+            {$set:
+                {quantity:req.params.number}},function(err,product){
                 if(err){
-                    console.log("Cannot update the product");
+                    console.log("product not found");
                 }
                 return res.json(200,{
                     data:{
@@ -82,9 +92,9 @@ module.exports.update = function(req,res){
             );
         
     }catch (err) {
-        console.log("Error while updating the product",err);
+        console.log("Error ",err);
         return res.json(500,{
-                message:"Internal server error"
+                message:"Server error"
         });
     }
 
