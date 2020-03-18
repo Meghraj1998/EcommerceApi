@@ -6,7 +6,6 @@
 <span> It is the simple product api developed for practice , User can add, update, delete ,and list the product detail</span>
 <br>
 <h2>How to use</h2>
-<br>
 <p> Add Product(Create)</p><br>
 ->request(Post Request)<br>
 <code>http://localhost:8000/create</code><br>
