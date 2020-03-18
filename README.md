@@ -4,13 +4,13 @@
 
 <h1>Product Api</h1>
 <span> It is the simple product api developed for practice , User can add, update, delete ,and list the product detail</span>
-
+<br>
 <h2>How to use</h2>
-
-<p> Add Product(Create)</p>
-->request(Post Request)
-<code>http://localhost:8000/create</code>
-->response 
+<br>
+<p> Add Product(Create)</p><br>
+->request(Post Request)<br>
+<code>http://localhost:8000/create</code><br>
+->response <br>
 <code>
 {
     "data": {
