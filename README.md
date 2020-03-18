@@ -27,6 +27,8 @@
 </code>
 
 
+<br>
+<br>
 <p> Delete Product</p>
 ->request(Delete Request)<br>
 <code>http://localhost:8000/:id</code><br>
@@ -38,6 +40,8 @@
 </code><br>
 
 
+<br>
+<br>
 <p> List All Product</p>
 ->request(Get request)<br>
 <code>http://localhost:8000</code><br>
